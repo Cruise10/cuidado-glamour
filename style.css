@@ -135,6 +135,7 @@ section{
     font-size: 8rem;
     line-height: 8rem;
     font-weight: 900;
+    text-transform: capitalize;
 }
 
 /* home */
@@ -405,3 +406,62 @@ section{
 }
 
 /* pricing */
+
+/* blogs */
+
+.blogs .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+}
+
+.blogs .box-container .box {
+    background: var(--primary-color);
+}
+
+.blogs .box-container .box .image {
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.blogs .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogs .box-container .box:hover .image img {
+    transform: scale(1.2);
+}
+
+.blogs .box-container .box .content {
+    padding: 2rem;
+}
+
+.blogs .box-container .box .content .title {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+.blogs .box-container .box .content .title:hover {
+    color: var(--main-colors);
+}
+
+.blogs .box-container .box .content span {
+    color: var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.blogs .box-container .box .content p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--white);
+    padding: 1rem 0;
+}
+/* blogs */
